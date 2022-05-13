@@ -1,0 +1,23 @@
+cd /srv/www/htdocs 
+vim homepage.html
+#Type  <html>
+        <head>
+         <title>First_Name Last_Name</title>
+        </head>
+        <body>
+            This is my website
+            <br>Click<a href=“index.html”>here</a> </br>
+        </body>
+       </html>
+#Save and close.
+
+vim index.html
+#Type:
+
+<html>
+ <body>
+  <h1>It works!</h1> <br>Click <a href="homepage.html">here</a> to go to your Web page!
+ </body>
+</html>
+
+#Test your Web page by starting Firefox and entering localhostin the address bar.
