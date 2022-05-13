@@ -1,0 +1,31 @@
+#Create, view, and extract tar archives
+mkdir Act6-1
+cd Act6-1
+touch apple banana orange
+tar -cvf fruit.tar apple banana orange 
+ls -l 
+rm apple banana orange 
+ls -l
+tar -tvf fruit.tar
+tar -xvf fruit.tar 
+ls -l
+rm fruit.tar
+mkdir Act6-2 
+cd Act6-2
+touch moon sun earth stars tree grass plant flower
+tar -cvf space.tar moon sun earth
+ls -l 
+tar -tvf space.tar
+tar -rvf space.tar stars 
+tar -tvf space.tar 
+vim sun 
+#Type : We need the Sun
+tar -uvf space.tar earth moon stars sun 
+tar -cvf planet.tar tree grass plant flower 
+tar -Avf planet.tar space.tar
+tar –delete -vf planet.tar flower moon
+tar -cvf new.tar moon flower tree
+vim tree
+#Type: trees give off oxygen
+tar -dvf new.tar moon flower tree 
+
