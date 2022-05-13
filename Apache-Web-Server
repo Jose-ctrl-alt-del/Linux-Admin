@@ -1,0 +1,18 @@
+yast –-gtk
+
+#clickingSoftwareon the left and then clicking Software Management.
+#click the Filter list arrow, and then click Patterns. 
+#click the Web and LAMP Server.
+#After finishing then close the YaST Control Center.
+
+#Testing an Apache Web Server
+rcapache2 status
+rcapache2 start
+rcapache2 stop
+yast –gtk
+
+#Click Systemon the left, and then click System Services (Runlevel).
+#Expert Mode
+#Start/Stop/Refresh
+
+#Test your Apache server by starting a Web browser and typing http://localhost in the address bar
