@@ -3,24 +3,24 @@
 #The Soft link are that Type of links that  point to other files instead of pointing to data on the hard drive. The soft link do not share the same inode number.
 #Example working with Links
 
-~> touch actfile1
-~> ls -il
-~> stat acfile1
-~> mkdir Linkdir 
-~> cd Linkdir
-~> ln ~/Activity3-7/actfile1 
-~> cd ~/Activity3-7
-~> ls -il
-~> cd ~/Activity3-7
-~> rm actfile1
-~> ls -il
-~> cd ~/Activity 3-7
-~> rm actfile1 
-~> ls -il
-~> cd ~/Linkdir 
-~> ls -il
-~> cd ~/Activity3-7
-~> ln -s ~/Linkdir/actfile1
-~> ls -il
-~> cd ~/Linkdir
-~> ls -il
+touch actfile1
+ls -il
+stat acfile1
+mkdir Linkdir 
+cd Linkdir
+ln ~/Activity3-7/actfile1 
+cd ~/Activity3-7
+ls -il
+cd ~/Activity3-7
+rm actfile1
+ls -il
+cd ~/Activity 3-7
+rm actfile1 
+ls -il
+cd ~/Linkdir 
+ls -il
+cd ~/Activity3-7
+ln -s ~/Linkdir/actfile1
+ls -il
+cd ~/Linkdir
+ls -il
