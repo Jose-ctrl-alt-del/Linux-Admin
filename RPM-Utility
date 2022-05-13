@@ -1,0 +1,14 @@
+#Go to http://download.opensuse.org/update/11.2/rpm/i586/, which lists i586 RPM packages.
+
+su tiff-3.8.2-145.4.1.i586.rpm
+cd /home/username/Download
+ls -l 
+rpm -ivh tiff-3.8.2-145.4.1.i586.rpm
+rpm -q tiff
+rpm -e tiff
+rpm -Fvh
+tiff-3.8.2-145.4.1.i586.rpm
+rpm -Uvh tiff-3.8.2-145.4.1.i586.rpm
+exit
+rpm -ev gimp
+rpm -ivh vlc-1.0.6-1.13.i586.rpm
