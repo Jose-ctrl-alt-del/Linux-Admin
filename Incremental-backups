@@ -1,0 +1,14 @@
+mkdir Act6-4
+cd Act6-4 
+touch math English history
+tar -cv Wf $HOME/backup0.tar -V “This is a full backup of the Act6-4 directory” –listed-incremental=$HOME/act6-4.snap *
+cd 
+tar -tvf backup0.tar
+cd Act6-4
+tar -cvWf $HOME/backup1.tar -V “This is an incremental backup of the Act6-4 directory” –listed-incremental=$HOME/act5-4.snap *
+tar -tvf backup1.tar
+cd Act6-4 
+rm *
+tar -xvf $HOME/backup0.tar
+tar -xvf $HOME/backup1.tar
+ls -l
